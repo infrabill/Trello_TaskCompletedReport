@@ -1,3 +1,13 @@
+## Development Setup
+You need to initialize your virtual environment. To do so run the following
+commands from the root of the project
+
+```bash
+$ virtualenv2 .env
+$ source .env/bin/activate
+$ pip install -r requirements.txt
+```
+
 ## config-gen.py
 Takes the key and secret key from command line and generates an oauth key and
 secret that will be set in the config.
