@@ -9,7 +9,7 @@ def get_opts():
         description="Generate OAuth keys for interacting with remote services"
     )
     ap.add_argument(
-        '-c' , '--config',
+        '-c', '--config',
         type=str,
         help="Path to the configuration file",
         required=True
@@ -36,6 +36,8 @@ def get_opts():
 if __name__ == "__main__":
     opts = get_opts()
     config = Config(opts.config)
-    print (config.get_trello_key())
-    config.set_trello_key("SomethingObviousElse")
-    config.save()
+    if opts.ACTION == 'init-trello':
+        config.init_trello(
+            opts.KEY,
+            opts.SECRET
+        )

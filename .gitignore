@@ -1,6 +1,7 @@
 # Application Specific
 config.ini
 .env
+.ropeproject/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
