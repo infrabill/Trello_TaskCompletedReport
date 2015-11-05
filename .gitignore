@@ -1,6 +1,7 @@
 # Application Specific
 config.ini
 .env
+.idea/
 .ropeproject/
 
 # Byte-compiled / optimized / DLL files
